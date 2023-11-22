@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+h3{ 
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.25em;
+}
+li{
+    font-size: 1.25em;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+button{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgba(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.color-dream{
+    color: aquamarine;
+}
+
+header{
+    background-color: black;
+}
+
+header .logo{
+    margin: 0 ;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.7em;
+}
+
+header .container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+
+}
+
+header a:hover{
+    color:blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) ,url("../imagenes/Hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero h1{
+    color: white;
+}
+
+#puedes .container h2{
+    padding-bottom: 50px;
+}
+#puedes .container{
+    text-align: center;
+    padding: 300px 15px;
+
+
+}
+
+#Gamas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#Gamas .container{
+
+    padding: 100px 0px;
+
+
+}
+
+#Gamas h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#Gamas p{
+    display: none;
+}
+
+#Gamas .gamaspc{
+    background-position: center center;
+    background-size: cover;
+    padding: 55px 0px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.gamaspc:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) ,url("../imagenes/gama-baja.jpg");
+
+}
+
+.gamaspc:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) ,url("../imagenes/gama-media.jpg");
+}
+
+.gamaspc:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) ,url("../imagenes/gama-alta.png");
+}
+
+
+#Caract .container{
+    padding: 200px 12px;
+    text-align: center;
+
+}
+
+#Caract li{
+    margin: 17px 0px;
+    font-weight: bold;
+}
+
+footer{
+    background-color:rgb(99, 11, 126);
+    color: black;
+}
+
+footer p{
+    margin: 0;
+    font-size: 2em;
+    padding-bottom: 15px ;
+}
+
+footer .container{
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+ /* ICONOS WEB */
+
+ i{
+    display: flex;
+    justify-content: center;
+
+ }
+
+ i a{
+    padding: 0 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+ }
+
+/* Pc-armadas */
+
+.Pcs .imgpc{
+
+    width: 40%;
+    background-color: beige;
+    margin-bottom: 30px;
+}
+
+.acomodar{
+
+    display:inline-block;
+}
+
+.flex-center h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.acomodar p{
+    font-size: 2vh;
+}
+
+.botonbuy{
+    text-align: center;
+}
+
+/* PC ESCRITORIO  */
+
+@media (min-width:720px) {
+
+
+    header{
+
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 30px;
+    }
+    
+    header nav a{
+        font-size: 1.3em;
+        font-weight: normal;
+    }
+
+    #puedes .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #puedes .text{
+        width: 50%;
+        max-width: 800px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #puedes .img-puedes{
+        background-image: url("../imagenes/puedes.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 420px;
+    }
+    .Pcs{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 90%;
+        margin: 5%;
+        grid-gap: 30px;
+    }
+    .Pcs img{
+        width: 20%;
+        transition: all 300ms;
+        position: relative;
+    }
+    .Pcs img:hover{
+        transform: scale(1.15);
+    }
+    .Pcs .imgpc{
+
+        width: 100%;
+
+    }
+     /* ICONOS WEB */
+     i{
+        display: flex;
+        justify-content: end;
+        padding-right: 50px;
+    
+     }
+    
+     i a{
+        padding: 0 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+        font-weight: bold;
+        color: black;
+     }
+    
+    
+}
